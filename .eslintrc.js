@@ -3,6 +3,7 @@ module.exports = {
   env: {
     node: true
   },
+  plugins: ["markdown"],
   extends: ["plugin:vue/essential", "@vue/prettier", "@vue/typescript"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
