@@ -7,8 +7,12 @@
             <div class="navbar-brand">
               <a class="navbar-item">
                 <div class="Coves-bold">
-                  cheersBeer
-                  <font-awesome-icon icon="beer" />
+                  <router-link to="/">
+                    <font-awesome-icon
+                      class="font-awesome-icon"
+                      icon="beer"
+                    />CheersBeer
+                  </router-link>
                 </div>
               </a>
               <span
@@ -32,19 +36,26 @@
                   <ul>
                     <li @click="closeMenu">
                       <router-link to="/">
-                        <font-awesome-icon icon="home" />&ensp; Home
+                        <font-awesome-icon
+                          class="font-awesome-icon"
+                          icon="home"
+                        />Home
                       </router-link>
                     </li>
                     <li @click="closeMenu">
                       <router-link to="/about">
                         <font-awesome-icon
+                          class="font-awesome-icon"
                           :icon="['far', 'address-card']"
-                        />&ensp; About
+                        />About
                       </router-link>
                     </li>
                     <li @click="closeMenu">
                       <router-link to="/blog">
-                        <font-awesome-icon icon="blog" />&ensp; Blog
+                        <font-awesome-icon
+                          class="font-awesome-icon"
+                          icon="book"
+                        />Blog
                       </router-link>
                     </li>
                   </ul>
@@ -67,18 +78,26 @@
             <ul>
               <li @click="closeMenu">
                 <router-link to="/">
-                  <font-awesome-icon icon="home" />&ensp; Home
+                  <font-awesome-icon
+                    class="font-awesome-icon"
+                    icon="home"
+                  />Home
                 </router-link>
               </li>
               <li @click="closeMenu">
                 <router-link to="/about">
-                  <font-awesome-icon :icon="['far', 'address-card']" />&ensp;
-                  About
+                  <font-awesome-icon
+                    class="font-awesome-icon"
+                    :icon="['far', 'address-card']"
+                  />About
                 </router-link>
               </li>
               <li @click="closeMenu">
                 <router-link to="/blog">
-                  <font-awesome-icon icon="blog" />&ensp; Blog
+                  <font-awesome-icon
+                    class="font-awesome-icon"
+                    icon="book"
+                  />Blog
                 </router-link>
               </li>
             </ul>
@@ -117,6 +136,12 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import '../../node_modules/bulma.styl/bulma.styl';
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: initial;
+  }
+}
+
 .title {
   font-family: 'Coves Bold';
 }
@@ -132,5 +157,9 @@ export default {
 
 .Coves-bold {
   font-family: 'Coves Bold', -apple-system, BlinkMacSystemFont, Roboto, 'æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“', YuGothic, 'Yu Gothic Medium', sans-serif;
+}
+
+.font-awesome-icon {
+  margin-right: 8px;
 }
 </style>
