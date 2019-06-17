@@ -10,6 +10,16 @@
         </div>
         <div class="content" is-medium>
           <h1 class="title">Accounts</h1>
+          <ul>
+            <li>
+              <a href="https://github.com/lollypop3103" target="_blank">
+                <font-awesome-icon
+                  class="font-awesome-icon"
+                  :icon="['fab', 'github-square']"
+                />Github
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -28,5 +38,9 @@ export default Vue.extend({
 
 .font-awesome-icon {
   margin-right: 8px;
+}
+
+a {
+  color: #4a4a4a;
 }
 </style>

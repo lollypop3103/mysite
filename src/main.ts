@@ -11,7 +11,8 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import {
   faVuejs,
   faJsSquare,
-  faNode
+  faNode,
+  faGithubSquare
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
@@ -27,7 +28,8 @@ library.add(
   faAddressCard,
   faVuejs,
   faJsSquare,
-  faNode
+  faNode,
+  faGithubSquare
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
