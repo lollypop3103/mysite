@@ -69,16 +69,6 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h1 class="title">Accounts</h1>
-          <ul>
-            <li>TBD</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="content">
           <h1 class="title">Contact</h1>
           <ul>
             <li>TBD</li>
