@@ -19,6 +19,14 @@
                 />Github
               </a>
             </li>
+            <li>
+              <a href="https://b.hatena.ne.jp/cheersBeer/" target="_blank">
+                <font-awesome-icon
+                  class="font-awesome-icon"
+                  icon="bookmark"
+                />Hatena
+              </a>
+            </li>
           </ul>
         </div>
       </div>

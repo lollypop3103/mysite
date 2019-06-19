@@ -5,7 +5,8 @@ import {
   faCoffee,
   faBeer,
   faHome,
-  faBook
+  faBook,
+  faBookmark
 } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -25,6 +26,7 @@ library.add(
   faBeer,
   faHome,
   faBook,
+  faBookmark,
   faAddressCard,
   faVuejs,
   faJsSquare,
