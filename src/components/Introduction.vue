@@ -15,10 +15,14 @@
                   <font-awesome-icon
                     class="font-awesome-icon"
                     icon="coffee"
-                  ></font-awesome-icon
-                  >コーヒーを淹れる
+                  />コーヒーを淹れる
                 </li>
-                <li>ライブへ行く</li>
+                <li>
+                  <font-awesome-icon
+                    class="font-awesome-icon"
+                    icon="music"
+                  />ライブへ行く
+                </li>
                 <li>ボードゲーム</li>
               </ul>
             </li>
