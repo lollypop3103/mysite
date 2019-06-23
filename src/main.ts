@@ -6,14 +6,17 @@ import {
   faBeer,
   faHome,
   faBook,
-  faBookmark
+  faBookmark,
+  faMusic
 } from "@fortawesome/free-solid-svg-icons";
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import {
   faVuejs,
   faJsSquare,
   faNode,
-  faGithubSquare
+  faGithubSquare,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
@@ -27,11 +30,14 @@ library.add(
   faHome,
   faBook,
   faBookmark,
+  faMusic,
+  faPalette,
   faAddressCard,
   faVuejs,
   faJsSquare,
   faNode,
-  faGithubSquare
+  faGithubSquare,
+  faTwitter
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
