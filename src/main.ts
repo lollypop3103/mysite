@@ -7,7 +7,8 @@ import {
   faHome,
   faBook,
   faBookmark,
-  faMusic
+  faMusic,
+  faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
@@ -31,6 +32,7 @@ library.add(
   faBook,
   faBookmark,
   faMusic,
+  faEnvelope,
   faPalette,
   faAddressCard,
   faVuejs,

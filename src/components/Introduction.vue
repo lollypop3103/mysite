@@ -75,7 +75,22 @@
         <div class="content">
           <h1 class="title">Contact</h1>
           <ul>
-            <li>TBD</li>
+            <li>
+              <a href="mailto:cheersbier@gmail.com">
+                <font-awesome-icon
+                  class="font-awesome-icon"
+                  icon="envelope"
+                />Mail
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cheersbeer__" target="_blank">
+                <font-awesome-icon
+                  class="font-awesome-icon"
+                  :icon="['fab', 'twitter']"
+                />Twitter(@cheersbeer__)
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -95,5 +110,9 @@ export default {
 
 .font-awesome-icon {
   margin-right: 8px;
+}
+
+a {
+  color: #4a4a4a;
 }
 </style>
