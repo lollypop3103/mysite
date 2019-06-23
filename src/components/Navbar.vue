@@ -51,6 +51,14 @@
                       </router-link>
                     </li>
                     <li @click="closeMenu">
+                      <router-link to="/portfolio">
+                        <font-awesome-icon
+                          class="font-awesome-icon"
+                          icon="palette"
+                        />Portfolio
+                      </router-link>
+                    </li>
+                    <li @click="closeMenu">
                       <router-link to="/blog">
                         <font-awesome-icon
                           class="font-awesome-icon"
@@ -90,6 +98,14 @@
                     class="font-awesome-icon"
                     :icon="['far', 'address-card']"
                   />About
+                </router-link>
+              </li>
+              <li @click="closeMenu">
+                <router-link to="/portfolio">
+                  <font-awesome-icon
+                    class="font-awesome-icon"
+                    icon="palette"
+                  />Portfolio
                 </router-link>
               </li>
               <li @click="closeMenu">

@@ -25,6 +25,12 @@ const router = new Router({
       meta: { title: "About - CheersBeer" }
     },
     {
+      path: "/portfolio/",
+      name: "portfolio",
+      component: () => import("./components/Portfolio.vue"),
+      meta: { title: "Portfolio - CheersBeer" }
+    },
+    {
       path: "/blog/",
       name: "blog-home",
       component: () => import("./components/BlogTemp.vue"),

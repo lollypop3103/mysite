@@ -5,7 +5,7 @@
         <div class="content is-medium">
           <h1 class="title">CheersBeer</h1>
           <p>CheersBeerのポートフォリオ兼ブログです</p>
-          <p>都内でエンジニアしています</p>
+          <p>都内のWEB系企業でエンジニアとして働いています</p>
           <p>お気軽にコンタクトフォーム等でご連絡ください</p>
         </div>
         <div class="content" is-medium>
@@ -25,6 +25,14 @@
                   class="font-awesome-icon"
                   icon="bookmark"
                 />Hatena
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cheersbeer__" target="_blank">
+                <font-awesome-icon
+                  class="font-awesome-icon"
+                  :icon="['fab', 'twitter']"
+                />Twitter
               </a>
             </li>
           </ul>
