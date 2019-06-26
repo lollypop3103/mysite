@@ -1,6 +1,6 @@
 {
-  "name": "vue-blog",
-  "short_name": "vue-blog",
+  "name": "CheersBeer",
+  "short_name": "CheersBeer",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
