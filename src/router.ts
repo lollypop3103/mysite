@@ -35,6 +35,12 @@ const router = new Router({
       name: "blog-home",
       component: () => import("./components/BlogTemp.vue"),
       meta: { title: "Blog - CheersBeer" }
+    },
+    {
+      path: "/contact/",
+      name: "contact",
+      component: () => import("./components/Contact.vue"),
+      meta: { title: "Contact - CheersBeer" }
     }
     /*
     {

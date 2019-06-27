@@ -46,7 +46,7 @@
                       <router-link to="/about">
                         <font-awesome-icon
                           class="font-awesome-icon"
-                          :icon="['far', 'address-card']"
+                          icon="user"
                         />About
                       </router-link>
                     </li>
@@ -64,6 +64,14 @@
                           class="font-awesome-icon"
                           icon="book"
                         />Blog
+                      </router-link>
+                    </li>
+                    <li @click="closeMenu">
+                      <router-link to="/contact">
+                        <font-awesome-icon
+                          class="font-awesome-icon"
+                          :icon="['far', 'address-card']"
+                        />Contact
                       </router-link>
                     </li>
                   </ul>
@@ -96,7 +104,7 @@
                 <router-link to="/about">
                   <font-awesome-icon
                     class="font-awesome-icon"
-                    :icon="['far', 'address-card']"
+                    icon="user"
                   />About
                 </router-link>
               </li>
@@ -114,6 +122,14 @@
                     class="font-awesome-icon"
                     icon="book"
                   />Blog
+                </router-link>
+              </li>
+              <li @click="closeMenu">
+                <router-link to="/contact">
+                  <font-awesome-icon
+                    class="font-awesome-icon"
+                    :icon="['far', 'address-card']"
+                  />Contact
                 </router-link>
               </li>
             </ul>
