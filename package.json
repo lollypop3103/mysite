@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": ">=12.0.0",
-    "npm":">=6.9.0"
+    "npm": ">=6.9.0"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -20,8 +20,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@types/lodash": "^4.14.135",
-    "@types/marked": "^0.6.5",
-    "@types/vue-markdown": "^2.2.1",
     "bulma": "^0.7.5",
     "bulma.styl": "^0.6.11",
     "core-js": "^3.1.4",
@@ -35,10 +33,10 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
     "@creativebulma/bulma-collapsible": "^1.0.4",
     "@types/jest": "^24.0.15",
     "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-e2e-cypress": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-plugin-pwa": "^3.8.0",
     "@vue/cli-plugin-typescript": "^3.8.1",
@@ -52,7 +50,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-markdown": "^1.0.0",
     "eslint-plugin-vue": "^5.2.3",
-    "markdown-to-vue-loader": "^1.0.1",
+    "jest": "^24.8.0",
     "marked": "^0.6.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
