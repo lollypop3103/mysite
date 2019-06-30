@@ -31,50 +31,80 @@
                   :icon="['fab', 'google']"
                 />Googleフォーム
               </p>
-              <ul>
-                <li>
-                  <div class="field">
-                    <label class="label">名前</label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input class="input" type="text" />
-                      <span class="icon is-small is-left">
-                        <font-awesome-icon icon="user" />
-                      </span>
+              <form
+                class
+                action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeGIWrMhWDw_sAt8oU3-1WtvUha7Uto3EzntLGqzUgtWhgu4A/formResponse"
+                method="post"
+                v-show="!submitted"
+                name="gf_form"
+                target="hidden_iframe"
+                @submit.prevent="gf_submit()"
+              >
+                <ul>
+                  <li>
+                    <div class="field">
+                      <label class="label">名前</label>
+                      <div class="control has-icons-left has-icons-right">
+                        <input
+                          class="input"
+                          type="text"
+                          name="entry.1913741007"
+                          value
+                        />
+                        <span class="icon is-small is-left">
+                          <font-awesome-icon icon="user" />
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input class="input" type="email" />
-                      <span class="icon is-small is-left">
-                        <font-awesome-icon icon="envelope" />
-                      </span>
+                  </li>
+                  <li>
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control has-icons-left has-icons-right">
+                        <input
+                          class="input"
+                          type="email"
+                          name="entry.1670423759"
+                          value
+                        />
+                        <span class="icon is-small is-left">
+                          <font-awesome-icon icon="envelope" />
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="field">
-                    <label class="label">メッセージ</label>
+                  </li>
+                  <li>
+                    <div class="field">
+                      <label class="label">メッセージ</label>
+                      <div class="control">
+                        <textarea
+                          class="textarea"
+                          name="entry.1307070095"
+                          value
+                        ></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <br />
+                  <div class="field is-grouped">
                     <div class="control">
-                      <textarea
-                        class="textarea"
-                        placeholder="Textarea"
-                      ></textarea>
+                      <button
+                        class="button is-link"
+                        type="submit"
+                        name="button"
+                      >
+                        送信
+                      </button>
                     </div>
                   </div>
-                </li>
-                <br />
-                <div class="field is-grouped">
-                  <div class="control">
-                    <button class="button is-link">Submit</button>
-                  </div>
-                  <div class="control">
-                    <button class="button is-text">Cancel</button>
-                  </div>
-                </div>
-              </ul>
+                </ul>
+              </form>
+              <div v-show="submitted">
+                <p>
+                  送信しました。
+                  <br />メッセージありがとうございます。
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -85,7 +115,25 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  data: function() {
+    return {
+      formdata: {},
+      submitted: false
+    };
+  },
+  methods: {
+    gf_submit: function() {
+      document.gf_form.submit();
+      this.submitted = true;
+    }
+  },
+  mounted: function() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("name", "hidden_iframe");
+    iframe.setAttribute("style", "display: none");
+    document.body.appendChild(iframe);
+  }
 };
 </script>
 
