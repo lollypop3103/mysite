@@ -6,6 +6,7 @@
           <h1 class="title">CheersBeer</h1>
           <p>CheersBeerのポートフォリオ兼ブログです</p>
           <p>都内のWEB系企業でエンジニアとして働いています</p>
+          <p>フロントエンドからバックエンドまでできるフルスタックエンジニア</p>
           <p>お気軽にコンタクトフォーム等でご連絡ください</p>
         </div>
         <div class="content" is-medium>
