@@ -34,7 +34,7 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-0",
+    "@babel/core": "^7.4.5",
     "@creativebulma/bulma-collapsible": "^1.0.4",
     "@types/jest": "^24.0.15",
     "@vue/cli-plugin-babel": "^3.8.0",
