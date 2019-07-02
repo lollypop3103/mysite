@@ -27,13 +27,14 @@
     "register-service-worker": "^1.6.2",
     "twemoji": "^12.0.4",
     "vue": "^2.6.10",
+    "vue-analytics": "^5.17.0",
     "vue-class-component": "^7.1.0",
     "vue-property-decorator": "^8.2.1",
     "vue-router": "^3.0.6",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-0",
+    "@babel/core": "^7.4.5",
     "@creativebulma/bulma-collapsible": "^1.0.4",
     "@types/jest": "^24.0.15",
     "@vue/cli-plugin-babel": "^3.8.0",

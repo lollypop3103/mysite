@@ -27,6 +27,7 @@ import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
 import "./assets/stylus/style.styl";
+import VueAnalytics from "vue-analytics";
 
 library.add(
   faCoffee,
@@ -50,6 +51,8 @@ library.add(
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
+
+Vue.use(VueAnalytics, { id: "UA-143076714-1", router });
 
 new Vue({
   router,

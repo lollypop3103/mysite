@@ -16,7 +16,8 @@
       "*": ["types/*"],
       "*": ["types/*"],
       "@/*": ["src/*"],
-      "twemoji": ["src/types/twemoji.d.ts"]
+      "twemoji": ["src/types/twemoji.d.ts"],
+      "vue-analytics": ["src/types/vue-analytics.d.ts"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
