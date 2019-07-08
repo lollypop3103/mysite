@@ -25,10 +25,10 @@ const router = new Router({
       meta: { title: "About - CheersBeer" }
     },
     {
-      path: "/portfolio/",
-      name: "portfolio",
+      path: "/works/",
+      name: "works",
       component: () => import("./components/Portfolio.vue"),
-      meta: { title: "Portfolio - CheersBeer" }
+      meta: { title: "Works - CheersBeer" }
     },
     {
       path: "/blog/",

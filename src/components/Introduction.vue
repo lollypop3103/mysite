@@ -9,21 +9,23 @@
             <li>From: 滋賀</li>
             <li>Location: 埼玉</li>
             <li>
-              Hobby:
+              Like:
               <ul>
                 <li>
                   <font-awesome-icon
                     class="font-awesome-icon"
                     icon="coffee"
-                  />コーヒーを淹れる
+                  />コーヒー
                 </li>
                 <li>
                   <font-awesome-icon
                     class="font-awesome-icon"
                     icon="music"
-                  />ライブへ行く
+                  />邦楽ロック
                 </li>
                 <li>ボードゲーム</li>
+                <li>ロードバイク</li>
+                <li>横浜DeNAベイスターズ</li>
               </ul>
             </li>
           </ul>
