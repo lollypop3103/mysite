@@ -51,11 +51,11 @@
                       </router-link>
                     </li>
                     <li @click="closeMenu">
-                      <router-link to="/portfolio">
+                      <router-link to="/works">
                         <font-awesome-icon
                           class="font-awesome-icon"
                           icon="palette"
-                        />Portfolio
+                        />Works
                       </router-link>
                     </li>
                     <li @click="closeMenu">
@@ -109,11 +109,11 @@
                 </router-link>
               </li>
               <li @click="closeMenu">
-                <router-link to="/portfolio">
+                <router-link to="/works">
                   <font-awesome-icon
                     class="font-awesome-icon"
                     icon="palette"
-                  />Portfolio
+                  />Works
                 </router-link>
               </li>
               <li @click="closeMenu">
