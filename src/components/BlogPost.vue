@@ -1,55 +1,116 @@
+<template>
+  <!-- Check blog posts exist -->
+  <div v-if="posts.length !== 0" class="blog-main">
+    <!-- Template for blog posts -->
+    <div
+      v-for="post in posts"
+      :key="post.id"
+      v-bind:post="post"
+      class="blog-post"
+    >
+      <router-link :to="linkResolver(post)">
+        <h2>{{ $prismic.richTextAsPlain(post.data.title) }}</h2>
+        <p class="blog-post-meta">
+          <span class="created-at">
+            {{
+              Intl.DateTimeFormat("en-US", dateOptions).format(
+                new Date(post.data.date)
+              )
+            }}
+          </span>
+        </p>
+        <div>
+          <p>{{ getFirstParagraph(post) }}</p>
+        </div>
+      </router-link>
+    </div>
+  </div>
+  <!-- If no blog posts return message -->
+  <div v-else class="blog-main">
+    <p>No Posts published at this time.</p>
+  </div>
+</template>
+
 <script>
-import { butter } from "@/buttercms";
 export default {
-  name: "App",
+  name: "blog-posts",
   data() {
     return {
-      post: null
+      posts: [],
+      dateOptions: { year: "numeric", month: "short", day: "2-digit" },
+      linkResolver: this.$prismic.linkResolver
     };
   },
   methods: {
-    getPost() {
-      butter.post
-        .retrieve(this.$route.params.slug)
-        .then(res => {
-          this.post = res.data;
+    getPosts() {
+      //Query to get blog posts
+      this.$prismic.client
+        .query(this.$prismic.Predicates.at("document.type", "post"), {
+          orderings: "[my.post.date desc]"
         })
-        .catch(res => {
-          console.log(res);
+        .then(response => {
+          this.posts = response.results;
         });
-    }
-  },
-  watch: {
-    $route: {
-      immediate: true,
-      handler(to, from) {
-        this.getPost();
+    },
+    //Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
+    getFirstParagraph(post) {
+      const textLimit = 300;
+      const slices = post.data.body;
+      let firstParagraph = "";
+      let haveFirstParagraph = false;
+
+      slices.map(function(slice) {
+        if (!haveFirstParagraph) {
+          if (slice.slice_type == "text") {
+            slice.primary.text.forEach(function(block) {
+              if (block.type == "paragraph") {
+                if (!haveFirstParagraph) {
+                  firstParagraph += block.text;
+                  haveFirstParagraph = true;
+                }
+              }
+            });
+          }
+        }
+      });
+
+      const limitedText = firstParagraph.substr(0, textLimit);
+
+      if (firstParagraph.length > textLimit) {
+        return limitedText.substr(0, limitedText.lastIndexOf(" ")) + "...";
+      } else {
+        return firstParagraph;
       }
     }
   },
   created() {
-    this.getPost();
+    this.getPosts();
   }
 };
 </script>
 
-<template>
-  <div id="blog-post">
-    <h1>{{ post.data.title }}</h1>
-    <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
-    <div v-html="post.data.body"></div>
-
-    <router-link
-      v-if="post.meta.previous_post"
-      :to="/blog/ + post.meta.previous_post.slug"
-      class="button"
-      >{{ post.meta.previous_post.title }}</router-link
-    >
-    <router-link
-      v-if="post.meta.next_post"
-      :to="/blog/ + post.meta.next_post.slug"
-      class="button"
-      >{{ post.meta.next_post.title }}</router-link
-    >
-  </div>
-</template>
+<style scoped>
+.blog-main {
+  max-width: 700px;
+  margin: auto;
+}
+.blog-post {
+  margin-bottom: 3rem;
+}
+.blog-post h2 {
+  margin: 0;
+}
+.blog-post-meta {
+  color: #9a9a9a;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+/* Media Queries */
+@media (max-width: 767px) {
+  .blog-main {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
+</style>

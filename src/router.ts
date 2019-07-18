@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import NotFound from "./views/NotFound.vue";
+import Post from "./views/Post.vue";
 
 Vue.use(Router);
 
@@ -31,10 +33,21 @@ const router = new Router({
       meta: { title: "Works - CheersBeer" }
     },
     {
-      path: "/blog/",
+      path: "/blog",
       name: "blog-home",
-      component: () => import("./components/BlogTemp.vue"),
+      component: () => import("./components/BlogHome.vue"),
       meta: { title: "Blog - CheersBeer" }
+    },
+    {
+      path: "/blog/:uid",
+      name: "post",
+      component: Post,
+      meta: { title: "Blog - CheersBeer" }
+    },
+    {
+      path: "/not-found",
+      name: "not-found",
+      component: NotFound
     },
     {
       path: "/contact/",
@@ -42,12 +55,6 @@ const router = new Router({
       component: () => import("./components/Contact.vue"),
       meta: { title: "Contact - CheersBeer" }
     }
-    /*
-    {
-      path: "/blog/:slug",
-      name: "blog-post",
-      component: BlogPost
-    }*/
   ]
 });
 

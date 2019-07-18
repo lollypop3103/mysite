@@ -1,4 +1,5 @@
 module.exports = {
+  runtimeCompiler: true,
   parallel: false,
   configureWebpack: {
     module: {
