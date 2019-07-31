@@ -1,28 +1,38 @@
 <template>
-  <div class="main">
-    <div class="outer-container">
-      <div class="back">
-        <router-link to="./">ブログ一覧に戻る</router-link>
-      </div>
+  <div>
+    <section class="section">
+      <div class="container">
+        <div class="content is-medium">
+          <div class="back">
+            <router-link to="./">
+              <font-awesome-icon
+                class="font-awesome-icon"
+                icon="list-ul"
+              />ブログ一覧に戻る
+            </router-link>
+          </div>
 
-      <h1 class="blog-title">{{ $prismic.richTextAsPlain(fields.title) }}</h1>
-      <p class="blog-post-meta">
-        <span class="created-at">
-          {{
-            Intl.DateTimeFormat("en-US", dateOptions).format(
-              new Date(fields.date)
-            )
-          }}
-        </span>
-      </p>
-    </div>
-    <!-- Slice Block Componenet tag -->
-    <slices-block :slices="slices" />
+          <h1 class="blog-title">
+            {{ $prismic.richTextAsPlain(fields.title) }}
+          </h1>
+          <p class="blog-post-meta">
+            <span class="created-at">
+              {{
+                Intl.DateTimeFormat("en-US", dateOptions).format(
+                  new Date(fields.date)
+                )
+              }}
+            </span>
+          </p>
+        </div>
+        <!-- Slice Block Componenet tag -->
+        <slices-block :slices="slices" />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-//Importing all the slices components
 import SlicesBlock from "../components/SlicesBlock.vue";
 
 export default {
@@ -69,7 +79,25 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus" scoped>
+@import '../../node_modules/bulma.styl/bulma.styl';
+
+.font-awesome-icon {
+  margin-right: 8px;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+.blog-title {
+  font-family: 'Coves Bold';
+}
+
+.created-at {
+  font-family: 'Coves Light';
+}
+
 .post-part.single a {
   text-decoration: none;
   background: -webkit-linear-gradient(
@@ -86,9 +114,9 @@ export default {
   background-size: 2px 2px;
   background-position: 0 23px;
 }
+
 .blog-post-meta {
   color: #9a9a9a;
-  font-family: "Lato", sans-serif;
   margin-bottom: 8px;
 }
 
@@ -97,6 +125,7 @@ export default {
   .post-part pre {
     font-size: 14px;
   }
+
   .blog-post-meta {
     font-size: 16px;
   }

@@ -1,33 +1,63 @@
 <template>
-  <!-- Check blog posts exist -->
-  <div v-if="posts.length !== 0" class="blog-main">
-    <!-- Template for blog posts -->
-    <div
-      v-for="post in posts"
-      :key="post.id"
-      v-bind:post="post"
-      class="blog-post"
-    >
-      <router-link :to="linkResolver(post)">
-        <h2>{{ $prismic.richTextAsPlain(post.data.title) }}</h2>
-        <p class="blog-post-meta">
-          <span class="created-at">
-            {{
-              Intl.DateTimeFormat("en-US", dateOptions).format(
-                new Date(post.data.date)
-              )
-            }}
-          </span>
-        </p>
-        <div>
-          <p>{{ getFirstParagraph(post) }}</p>
+  <div>
+    <section class="section">
+      <div class="container">
+        <div id="flow">
+          <span class="flow-1"></span>
+          <span class="flow-2"></span>
+          <span class="flow-3"></span>
         </div>
-      </router-link>
-    </div>
-  </div>
-  <!-- If no blog posts return message -->
-  <div v-else class="blog-main">
-    <p>No Posts published at this time.</p>
+        <div class="row columns">
+          <!-- Check blog posts exist -->
+          <div v-if="posts.length !== 0" class="blog-main">
+            <div class="column is-one-third">
+              <div
+                v-for="post in posts"
+                :key="post.id"
+                v-bind:post="post"
+                class="blog-post"
+              >
+                <router-link :to="linkResolver(post)">
+                  <div class="card large">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img :src="post.data.image.url" alt="Thumbnail" />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4 no-padding">
+                            {{ $prismic.richTextAsPlain(post.data.title) }}
+                          </p>
+                          <p class="subtitle is-6 blog-post-meta">
+                            <span class="created-at">
+                              {{
+                                Intl.DateTimeFormat(
+                                  "en-US",
+                                  dateOptions
+                                ).format(new Date(post.data.date))
+                              }}
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p>{{ getFirstParagraph(post) }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+            </div>
+          </div>
+          <!-- If no blog posts return message -->
+          <div v-else class="blog-main">
+            <p>No Posts published at this time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -50,6 +80,7 @@ export default {
         })
         .then(response => {
           this.posts = response.results;
+          console.log(this.posts);
         });
     },
     //Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
@@ -90,10 +121,16 @@ export default {
 </script>
 
 <style scoped>
-.blog-main {
-  max-width: 700px;
-  margin: auto;
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
+
+img {
+  max-width: 100%;
+}
+
 .blog-post {
   margin-bottom: 3rem;
 }
@@ -105,12 +142,5 @@ export default {
   font-family: "Lato", sans-serif;
   margin-bottom: 8px;
   font-size: 16px;
-}
-/* Media Queries */
-@media (max-width: 767px) {
-  .blog-main {
-    padding: 0 20px;
-    font-size: 18px;
-  }
 }
 </style>
