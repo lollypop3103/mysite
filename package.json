@@ -11,7 +11,28 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run precommit",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
@@ -36,6 +57,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@commitlint/cli": "^8.1.0",
     "@creativebulma/bulma-collapsible": "^1.0.4",
     "@types/jest": "^24.0.16",
     "@vue/cli-plugin-babel": "^3.9.2",
@@ -53,7 +75,9 @@
     "eslint-plugin-cypress": "^2.6.0",
     "eslint-plugin-markdown": "^1.0.0",
     "eslint-plugin-vue": "^5.2.3",
+    "husky": "^3.0.3",
     "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "ts-jest": "^24.0.2",
