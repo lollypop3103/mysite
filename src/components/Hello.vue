@@ -49,10 +49,10 @@ export default Vue.extend({
   name: "Hello"
 });
 </script>
-
+<style scoped>
+@import "./../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css";
+</style>
 <style lang="stylus" scoped>
-@import '../../node_modules/bulma.styl/bulma.styl';
-
 .font-awesome-icon {
   margin-right: 8px;
 }

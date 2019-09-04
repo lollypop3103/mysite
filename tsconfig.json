@@ -14,7 +14,6 @@
     "types": ["webpack-env", "jest"],
     "paths": {
       "*": ["types/*"],
-      "*": ["types/*"],
       "@/*": ["src/*"],
       "twemoji": ["src/types/twemoji.d.ts"],
       "vue-analytics": ["src/types/vue-analytics.d.ts"]
