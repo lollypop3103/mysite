@@ -80,6 +80,7 @@ export default {
         })
         .then(response => {
           this.posts = response.results;
+          // eslint-disable-next-line no-console
           console.log(this.posts);
         });
     },
