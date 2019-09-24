@@ -7,7 +7,7 @@
           <p>CheersBeerのポートフォリオ兼ブログです</p>
           <p>都内のWEB系企業でエンジニアとして働いています</p>
           <p>フロントエンドからバックエンドまでできるフルスタックエンジニア</p>
-          <p>お気軽にコンタクトフォーム等でご連絡ください</p>
+          <p>仕事等の依頼はお気軽にコンタクトフォーム等でご連絡ください</p>
         </div>
         <div class="content" is-medium>
           <h1 class="title">Accounts</h1>
@@ -46,13 +46,13 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  name: "App"
+  name: "Hello"
 });
 </script>
-
+<style scoped>
+@import "./../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css";
+</style>
 <style lang="stylus" scoped>
-@import '../../node_modules/bulma.styl/bulma.styl';
-
 .font-awesome-icon {
   margin-right: 8px;
 }

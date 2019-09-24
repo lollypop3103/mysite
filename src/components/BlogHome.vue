@@ -1,48 +1,110 @@
+<template>
+  <div>
+    <section class="section">
+      <div class="container">
+        <!-- Vue conditional to check if there is any content in document -->
+        <div v-if="hasContent" class="page">
+          <div class="home">
+            <h1 class="blog-title">
+              {{ $prismic.richTextAsPlain(fields.headline) }}
+            </h1>
+            <!-- Template for page description -->
+            <p class="blog-description">
+              {{ $prismic.richTextAsPlain(fields.description) }}
+            </p>
+          </div>
+          <!-- Vue reference for blog posts component -->
+          <blog-posts />
+        </div>
+        <!-- If no content return message -->
+        <div v-else class="home">
+          <p>Please add some content to your blog home document.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
 <script>
-import { butter } from "@/buttercms";
+import BlogPosts from "./BlogPost.vue";
+
 export default {
-  name: "App",
+  name: "blog-home",
+  components: {
+    BlogPosts
+  },
   data() {
     return {
-      page_title: "Blog",
-      posts: []
+      documentId: "",
+      fields: {
+        headline: null,
+        description: null
+      },
+      posts: [],
+      linkResolver: this.$prismic.linkResolver,
+      hasContent: false
     };
   },
   methods: {
-    getPosts() {
-      butter.post
-        .list({
-          page: 1,
-          page_size: 10
-        })
-        .then(res => {
-          this.posts = res.data.data;
-        });
+    getContent() {
+      //Query to get home content
+      this.$prismic.client.getSingle("blog_home").then(document => {
+        if (document) {
+          this.documentId = document.id;
+          this.fields.headline = document.data.headline;
+          this.fields.description = document.data.description;
+
+          //Check that the blog home contains content
+          this.checkForContent();
+        } else {
+          //returns error page
+          this.$router.push({ name: "not-found" });
+        }
+      });
+    },
+    //Function to check for any content on the blog home page
+    checkForContent() {
+      if (
+        this.$prismic.richTextAsPlain(this.fields.headline) !== "" ||
+        this.$prismic.richTextAsPlain(this.fields.description) !== ""
+      ) {
+        this.hasContent = true;
+      }
     }
   },
   created() {
-    this.getPosts();
+    this.getContent();
+    window.prismic.setupEditButton();
   }
 };
 </script>
 
-<template>
-  <div id="blog-home">
-    <h1>{{ page_title }}</h1>
-    <!-- `v-for` の生成、および Vue 用に `key` 属性の適用。ここでは、slug と index の組みを使用します -->
-    <div v-for="(post, index) in posts" :key="post.slug + '_' + index">
-      <router-link :to="'/blog/' + post.slug">
-        <article class="media">
-          <figure>
-            <!-- `:` による結果のバインディング -->
-            <!-- `featured_image` を使うかどうかは、`v-if`/`else` で判定します -->
-            <img v-if="post.featured_image" :src="post.featured_image" alt />
-            <img v-else src="http://via.placeholder.com/250x250" alt />
-          </figure>
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.summary }}</p>
-        </article>
-      </router-link>
-    </div>
-  </div>
-</template>
+<style scoped>
+.home {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.home .blog-avatar {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin: 1em auto;
+}
+.home .blog-description {
+  font-size: 18px;
+  color: #9a9a9a;
+  line-height: 30px;
+  padding-bottom: 1.5rem;
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px solid #dadada;
+}
+/* Media Queries */
+@media (max-width: 767px) {
+  .home {
+    padding: 0 20px;
+  }
+}
+</style>

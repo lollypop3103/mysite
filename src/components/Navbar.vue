@@ -7,7 +7,7 @@
             <div class="navbar-brand">
               <a class="navbar-item">
                 <div class="Coves-bold">
-                  <router-link to="/">
+                  <router-link to="/" class="navbar-item-link">
                     <font-awesome-icon
                       class="font-awesome-icon"
                       icon="beer"
@@ -164,10 +164,17 @@ export default {
 };
 </script>
 
+<style>
+@import "./../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css";
+.container {
+  flex-grow: 0;
+}
+</style>
+
 <style lang="stylus">
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-@import '../../node_modules/bulma.styl/bulma.styl';
 
+// @import '../../node_modules/bulma.styl/bulma.styl';
 @media screen and (min-width: 1024px) {
   .container {
     width: initial;
@@ -178,9 +185,12 @@ export default {
   font-family: 'Coves Bold';
 }
 
-.navbar {
-  @extend .hero.is-primary;
-  background-color;
+.a {
+  color: #fff;
+}
+
+.navbar-item-link {
+  color: #fff;
 }
 
 .Coves-light {
