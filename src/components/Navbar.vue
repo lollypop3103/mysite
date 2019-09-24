@@ -7,7 +7,7 @@
             <div class="navbar-brand">
               <a class="navbar-item">
                 <div class="Coves-bold">
-                  <router-link to="/">
+                  <router-link to="/" class="navbar-item-link">
                     <font-awesome-icon
                       class="font-awesome-icon"
                       icon="beer"
@@ -186,6 +186,10 @@ export default {
 }
 
 .a {
+  color: #fff;
+}
+
+.navbar-item-link {
   color: #fff;
 }
 
