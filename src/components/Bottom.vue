@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="content has-text-centered">
-        <p>Copyright (C) 2019 cheersBeer. All Rights Reserved.</p>
+        <p>Copyright (C) 2019 CheersBeer. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
