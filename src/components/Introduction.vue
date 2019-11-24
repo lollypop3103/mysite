@@ -6,12 +6,18 @@
           <div id="intro">
             <h1 class="title">About</h1>
             <ul>
-              <li>Name: CheersBeer</li>
+              <li>Name: 文 -Fumi-</li>
               <li>From: 滋賀</li>
               <li>Location: 埼玉</li>
               <li>
                 Like:
                 <ul>
+                  <li>
+                    <font-awesome-icon
+                      class="font-awesome-icon"
+                      icon="beer"
+                    />お酒
+                  </li>
                   <li>
                     <font-awesome-icon
                       class="font-awesome-icon"
