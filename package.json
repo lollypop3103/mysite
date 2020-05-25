@@ -82,7 +82,7 @@
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.6.4",
+    "typescript": "^3.9.3",
     "vue-template-compiler": "^2.6.10"
   }
 }
