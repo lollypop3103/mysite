@@ -4,7 +4,7 @@
       <div class="container">
         <div class="content is-medium">
           <div class="outer-container">
-            <h1>Page not found</h1>
+            <h1>Undr Construction...</h1>
             <div class="back">
               <router-link to="./">
                 <font-awesome-icon class="font-awesome-icon" icon="home" />ホームに戻る
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'NotFound',
+  name: 'UnderConstruction',
 };
 </script>
 

@@ -18,26 +18,17 @@
           <ul>
             <li>
               <a href="https://github.com/lollypop3103" target="_blank">
-                <font-awesome-icon
-                  class="font-awesome-icon"
-                  :icon="['fab', 'github-square']"
-                />Github
+                <font-awesome-icon class="font-awesome-icon" :icon="['fab', 'github-square']" />Github
               </a>
             </li>
             <li>
               <a href="https://b.hatena.ne.jp/cheersBeer/" target="_blank">
-                <font-awesome-icon
-                  class="font-awesome-icon"
-                  icon="bookmark"
-                />Hatena
+                <font-awesome-icon class="font-awesome-icon" icon="bookmark" />Hatena
               </a>
             </li>
             <li>
               <a href="https://twitter.com/cheersbeer__" target="_blank">
-                <font-awesome-icon
-                  class="font-awesome-icon"
-                  :icon="['fab', 'twitter']"
-                />Twitter
+                <font-awesome-icon class="font-awesome-icon" :icon="['fab', 'twitter']" />Twitter
               </a>
             </li>
           </ul>
@@ -48,13 +39,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 export default Vue.extend({
-  name: "Hello"
+  name: 'Hello',
 });
 </script>
 <style scoped>
-@import "./../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css";
+@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
 </style>
 <style lang="stylus" scoped>
 .font-awesome-icon {
