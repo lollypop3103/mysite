@@ -54,6 +54,12 @@ const router = new Router({
       name: "contact",
       component: () => import("./components/Contact.vue"),
       meta: { title: "Contact - CheersBeer" }
+    },
+    {
+      path: "/privacy-policy",
+      name: "privacy policy",
+      component: () => import("./components/PrivacyPolicy.vue"),
+      meta: { title: "Privacy Policy - CheersBeer" }
     }
   ]
 });
