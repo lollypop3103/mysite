@@ -8,16 +8,16 @@ module.exports = {
           test: /\.md$/,
           exclude: /node_modules/,
           use: [
-            "vue-loader",
+            'vue-loader',
             {
-              loader: "markdown-to-vue-loader",
+              loader: 'markdown-to-vue-loader',
               options: {
-                exportSource: true
-              }
-            }
-          ]
-        }
-      ]
-    }
-  }
+                exportSource: true,
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
 };
