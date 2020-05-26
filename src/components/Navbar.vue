@@ -8,10 +8,7 @@
               <a class="navbar-item">
                 <div class="Coves-bold">
                   <router-link to="/" class="navbar-item-link">
-                    <font-awesome-icon
-                      class="font-awesome-icon"
-                      icon="beer"
-                    />CheersBeer
+                    <font-awesome-icon class="font-awesome-icon" icon="beer" />CheersBeer
                   </router-link>
                 </div>
               </a>
@@ -26,52 +23,33 @@
                 <span></span>
               </span>
             </div>
-            <div
-              id="navbarMenuHeroA"
-              class="navbar-menu"
-              :class="{ 'is-active': isMenuActive }"
-            >
+            <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': isMenuActive }">
               <div class="navbar-end">
                 <div class="tabs is-one-quarter-desktop is-right Coves-light">
                   <ul>
                     <li @click="closeMenu">
                       <router-link to="/">
-                        <font-awesome-icon
-                          class="font-awesome-icon"
-                          icon="home"
-                        />Home
+                        <font-awesome-icon class="font-awesome-icon" icon="home" />Home
                       </router-link>
                     </li>
                     <li @click="closeMenu">
                       <router-link to="/about">
-                        <font-awesome-icon
-                          class="font-awesome-icon"
-                          icon="user"
-                        />About
+                        <font-awesome-icon class="font-awesome-icon" icon="user" />About
                       </router-link>
                     </li>
                     <li @click="closeMenu">
                       <router-link to="/works">
-                        <font-awesome-icon
-                          class="font-awesome-icon"
-                          icon="palette"
-                        />Works
+                        <font-awesome-icon class="font-awesome-icon" icon="palette" />Works
                       </router-link>
                     </li>
                     <li @click="closeMenu">
                       <router-link to="/blog">
-                        <font-awesome-icon
-                          class="font-awesome-icon"
-                          icon="book"
-                        />Blog
+                        <font-awesome-icon class="font-awesome-icon" icon="book" />Blog
                       </router-link>
                     </li>
                     <li @click="closeMenu">
                       <router-link to="/contact">
-                        <font-awesome-icon
-                          class="font-awesome-icon"
-                          :icon="['far', 'address-card']"
-                        />Contact
+                        <font-awesome-icon class="font-awesome-icon" :icon="['far', 'address-card']" />Contact
                       </router-link>
                     </li>
                   </ul>
@@ -93,43 +71,24 @@
           <div class="container Coves-light">
             <ul>
               <li @click="closeMenu">
-                <router-link to="/">
-                  <font-awesome-icon
-                    class="font-awesome-icon"
-                    icon="home"
-                  />Home
-                </router-link>
+                <router-link to="/"> <font-awesome-icon class="font-awesome-icon" icon="home" />Home </router-link>
               </li>
               <li @click="closeMenu">
                 <router-link to="/about">
-                  <font-awesome-icon
-                    class="font-awesome-icon"
-                    icon="user"
-                  />About
+                  <font-awesome-icon class="font-awesome-icon" icon="user" />About
                 </router-link>
               </li>
               <li @click="closeMenu">
                 <router-link to="/works">
-                  <font-awesome-icon
-                    class="font-awesome-icon"
-                    icon="palette"
-                  />Works
+                  <font-awesome-icon class="font-awesome-icon" icon="palette" />Works
                 </router-link>
               </li>
               <li @click="closeMenu">
-                <router-link to="/blog">
-                  <font-awesome-icon
-                    class="font-awesome-icon"
-                    icon="book"
-                  />Blog
-                </router-link>
+                <router-link to="/blog"> <font-awesome-icon class="font-awesome-icon" icon="book" />Blog </router-link>
               </li>
               <li @click="closeMenu">
                 <router-link to="/contact">
-                  <font-awesome-icon
-                    class="font-awesome-icon"
-                    :icon="['far', 'address-card']"
-                  />Contact
+                  <font-awesome-icon class="font-awesome-icon" :icon="['far', 'address-card']" />Contact
                 </router-link>
               </li>
             </ul>
@@ -142,16 +101,16 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   directives: {
     twemoji: {
       inserted(el) {
         el.innerHTML = twemoji.parse(el.innerHTML);
-      }
-    }
+      },
+    },
   },
   data: () => ({
-    isMenuActive: false
+    isMenuActive: false,
   }),
   methods: {
     toggleMenu() {
@@ -159,13 +118,13 @@ export default {
     },
     closeMenu() {
       this.isMenuActive = false;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style>
-@import "./../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css";
+@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
 .container {
   flex-grow: 0;
 }
