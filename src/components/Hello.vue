@@ -3,21 +3,18 @@
     <section class="section">
       <div class="container">
         <div class="content is-medium">
-          <p>Fumi's web site.</p>
+          <p>CheersBeer's web site.</p>
           <p>
             都内のWEB系企業でエンジニアとして働いています。
             <br />楽をするための努力が好きです。
           </p>
           <p>仕事等の依頼はお気軽にコンタクトフォーム等でご連絡ください。</p>
-          <p>
-            CheersBeerというのはお酒飲みたいからです、出会ったら乾杯しましょう。
-          </p>
         </div>
         <div class="content" is-medium>
           <h1 class="title">Accounts</h1>
           <ul>
             <li>
-              <a href="https://github.com/lollypop3103" target="_blank">
+              <a href="https://github.com/cheersbeer" target="_blank">
                 <font-awesome-icon class="font-awesome-icon" :icon="['fab', 'github-square']" />Github
               </a>
             </li>
