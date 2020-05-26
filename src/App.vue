@@ -7,15 +7,15 @@
 </template>
 
 <script lang="ts">
-import Navbar from "@/components/Navbar.vue";
-import Bottom from "@/components/Bottom.vue";
+import Navbar from '@/components/Navbar.vue';
+import Bottom from '@/components/Bottom.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Navbar,
-    Bottom
-  }
+    Bottom,
+  },
 };
 </script>
 <style>
