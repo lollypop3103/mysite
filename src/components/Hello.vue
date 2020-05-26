@@ -14,17 +14,17 @@
           <h1 class="title">Accounts</h1>
           <ul>
             <li>
-              <a href="https://github.com/cheersbeer" target="_blank">
+              <a href="https://github.com/cheersbeer" target="_blank" rel="noopener noreferrer">
                 <font-awesome-icon class="font-awesome-icon" :icon="['fab', 'github-square']" />Github
               </a>
             </li>
             <li>
-              <a href="https://b.hatena.ne.jp/cheersBeer/" target="_blank">
+              <a href="https://b.hatena.ne.jp/cheersBeer/" target="_blank" rel="noopener noreferrer">
                 <font-awesome-icon class="font-awesome-icon" icon="bookmark" />Hatena
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/cheersbeer__" target="_blank">
+              <a href="https://twitter.com/cheersbeer__" target="_blank" rel="noopener noreferrer">
                 <font-awesome-icon class="font-awesome-icon" :icon="['fab', 'twitter']" />Twitter
               </a>
             </li>
