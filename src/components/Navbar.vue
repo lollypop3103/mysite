@@ -5,13 +5,6 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item">
-                <div class="Coves-bold">
-                  <router-link to="/" class="navbar-item-link">
-                    <font-awesome-icon class="font-awesome-icon" icon="beer" />CheersBeer
-                  </router-link>
-                </div>
-              </a>
               <span
                 class="navbar-burger burger"
                 data-target="navbarMenuHeroA"
@@ -61,7 +54,7 @@
       </div>
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title Coves-bold">CheersBeer</h1>
+          <h1 class="title Coves-bold"><font-awesome-icon class="font-awesome-icon" icon="beer" />CheersBeer</h1>
         </div>
       </div>
 
