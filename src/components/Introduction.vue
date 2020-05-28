@@ -6,7 +6,7 @@
           <div id="intro">
             <h1 class="title">About</h1>
             <ul>
-              <li>Name: 文 -Fumi-</li>
+              <li>Name: 文 -Fumi- (CheersBeer)</li>
               <li>From: 滋賀</li>
               <li>Location: 埼玉</li>
               <li>

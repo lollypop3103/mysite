@@ -100,6 +100,7 @@
 </template>
 
 <script>
+import twemoji from 'twemoji';
 export default {
   name: 'App',
   directives: {
