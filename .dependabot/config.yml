@@ -1,20 +1,20 @@
 version: 1
 update_configs:
-  - package_manager: "javascript"
-    directory: "/"
-    update_schedule: "live"
+  - package_manager: 'javascript'
+    directory: '/'
+    update_schedule: 'live'
     default_reviewers:
-      - "cheersbeer"
+      - 'cheersbeer'
     default_labels:
-      - "dependencies"
+      - 'dependencies'
     allowed_updates:
       - match:
-          update_type: "all"
+          update_type: 'all'
     automerged_updates:
       - match:
-          dependency_type: "development"
-          update_type: "all"
+          dependency_type: 'development'
+          update_type: 'all'
       - match:
-          dependency_type: "production"
-          update_type: "semver:patch"
-    version_requirement_updates: "increase_versions"
+          dependency_type: 'production'
+          update_type: 'semver:minor'
+    version_requirement_updates: 'increase_versions'
