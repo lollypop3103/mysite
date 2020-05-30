@@ -16,7 +16,7 @@
                 <span></span>
               </span>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': isMenuActive }">
+            <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': isMenuActive }" v-show="isMenuActive">
               <div class="navbar-end">
                 <div class="tabs is-one-quarter-desktop is-right Coves-light">
                   <ul>
@@ -61,7 +61,7 @@
       <!-- Hero footer: will stick at the bottom -->
       <div class="hero-foot">
         <nav class="tabs">
-          <div class="container Coves-light">
+          <div class="container Coves-light" :style="{ 'flex-grow': 0 }">
             <ul>
               <li @click="closeMenu">
                 <router-link to="/"> <font-awesome-icon class="font-awesome-icon" icon="home" />Home </router-link>
@@ -117,17 +117,11 @@ export default {
 };
 </script>
 
-<style>
-@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
-.container {
-  flex-grow: 0;
-}
-</style>
-
 <style lang="stylus">
+@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-// @import '../../node_modules/bulma.styl/bulma.styl';
 @media screen and (min-width: 1024px) {
   .container {
     width: initial;

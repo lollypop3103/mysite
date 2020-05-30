@@ -6,17 +6,51 @@
           <div id="intro">
             <h1 class="title">About</h1>
             <ul>
-              <li>Name: 文 -Fumi- (CheersBeer)</li>
-              <li>From: 滋賀</li>
-              <li>Location: 埼玉</li>
               <li>
-                Like:
+                Name
                 <ul>
-                  <li><font-awesome-icon class="font-awesome-icon" icon="beer" />お酒</li>
+                  <li>文 -Fumi- (CheersBeer)</li>
+                </ul>
+              </li>
+              <li>
+                Like
+                <ul>
+                  <li><font-awesome-icon class="font-awesome-icon" :icon="['fa', 'glass-cheers']" />お酒</li>
+                  <ul>
+                    <li>
+                      クラフトビール
+                    </li>
+                    <li>
+                      日本酒
+                    </li>
+                  </ul>
                   <li><font-awesome-icon class="font-awesome-icon" icon="coffee" />コーヒー</li>
+                  <ul>
+                    <li>
+                      ハンドドリップ
+                    </li>
+                  </ul>
                   <li><font-awesome-icon class="font-awesome-icon" icon="music" />邦楽ロック</li>
+                  <ul>
+                    <li>
+                      UNISON SQUARE GARDEN
+                    </li>
+                    <li>
+                      BUMP OF CHICKEN
+                    </li>
+                  </ul>
                   <li><font-awesome-icon class="font-awesome-icon" icon="chess-board" />ボードゲーム</li>
+                  <ul>
+                    <li>
+                      ドミニオン
+                    </li>
+                  </ul>
                   <li><font-awesome-icon class="font-awesome-icon" icon="biking" />ロードバイク</li>
+                  <ul>
+                    <li>
+                      2019 ツールド東北
+                    </li>
+                  </ul>
                   <li><font-awesome-icon class="font-awesome-icon" icon="baseball-ball" />横浜DeNAベイスターズ</li>
                 </ul>
               </li>

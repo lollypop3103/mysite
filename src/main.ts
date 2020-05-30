@@ -5,7 +5,6 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import VueAnalytics from 'vue-analytics';
-import twemoji from 'twemoji';
 
 import App from './App.vue';
 import router from './router';
