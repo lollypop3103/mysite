@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import Skills from './views/Skills.vue';
 import NotFound from './views/NotFound.vue';
 import UnderConstruction from './views/UnderConstruction.vue';
 
@@ -23,6 +24,12 @@ const router = new Router({
       meta: { title: 'About - CheersBeer' },
     },
     {
+      path: '/skills',
+      name: 'skills',
+      component: Skills,
+      meta: { title: 'Skills - CheersBeer' },
+    },
+    {
       path: '/works',
       name: 'works',
       component: () => import('./components/Portfolio.vue'),
@@ -40,7 +47,7 @@ const router = new Router({
       component: NotFound,
     },
     {
-      path: '/contact/',
+      path: '/contact',
       name: 'contact',
       component: () => import('./components/Contact.vue'),
       meta: { title: 'Contact - CheersBeer' },
