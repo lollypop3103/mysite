@@ -31,6 +31,11 @@
                       </router-link>
                     </li>
                     <li @click="closeMenu">
+                      <router-link to="/skills">
+                        <font-awesome-icon class="font-awesome-icon" icon="star" /> Skills
+                      </router-link>
+                    </li>
+                    <li @click="closeMenu">
                       <router-link to="/works">
                         <font-awesome-icon class="font-awesome-icon" icon="palette" />Works
                       </router-link>
@@ -69,6 +74,11 @@
               <li @click="closeMenu">
                 <router-link to="/about">
                   <font-awesome-icon class="font-awesome-icon" icon="user" />About
+                </router-link>
+              </li>
+              <li @click="closeMenu">
+                <router-link to="/skills">
+                  <font-awesome-icon class="font-awesome-icon" icon="star" /> Skills
                 </router-link>
               </li>
               <li @click="closeMenu">
@@ -119,7 +129,6 @@ export default {
 
 <style lang="stylus">
 @import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 @media screen and (min-width: 1024px) {
