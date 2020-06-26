@@ -17,10 +17,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'NotFound',
-};
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+  metaInfo() {
+    return {
+      title: 'Not Found',
+      meta: [{ name: 'author', content: 'Cheers Beer' }],
+    };
+  },
+});
 </script>
 
 <style lang="stylus" scoped>

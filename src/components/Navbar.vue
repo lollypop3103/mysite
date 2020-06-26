@@ -102,9 +102,11 @@
   </header>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue';
 import twemoji from 'twemoji';
-export default {
+
+export default Vue.extend({
   name: 'App',
   directives: {
     twemoji: {
@@ -124,7 +126,7 @@ export default {
       this.isMenuActive = false;
     },
   },
-};
+});
 </script>
 
 <style lang="stylus">

@@ -7,18 +7,20 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue';
 import Navbar from '@/components/Navbar.vue';
 import Bottom from '@/components/Bottom.vue';
 
-export default {
+export default Vue.extend({
   name: 'App',
   components: {
     Navbar,
     Bottom,
   },
-};
+});
 </script>
-<style>
+
+<style lang="stylus">
 .sf-site-all {
   min-height: 100vh;
   display: flex;
