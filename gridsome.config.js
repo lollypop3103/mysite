@@ -5,10 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const siteName = 'CheersBeer';
+const siteUrl = 'https://cheersbeer.dev';
+const basePath = '/';
 
 module.exports = {
-  siteName: 'CheersBeer',
-  siteUrl: 'https://cheersbeer.dev',
+  siteName,
+  siteUrl,
   plugins: [
     { use: 'gridsome-plugin-typescript' },
     { use: 'gridsome-plugin-pwa' },
@@ -16,6 +19,25 @@ module.exports = {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-143076714-1',
+      },
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: siteName,
+        startUrl: `${siteUrl}${basePath}`,
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: '/manifest.json',
+        disableServiceWorker: false,
+        serviceWorkerPath: '/service-worker.js',
+        cachedFileTypes: 'png,jpg,jpeg,svg,woff,woff2',
+        shortName: siteName,
+        themeColor: '#1a202c',
+        backgroundColor: '#fafafa',
+        icon: 'src/assets/img/site-icon.png',
+        msTileImage: '',
+        msTileColor: '#1a202c',
       },
     },
     {
