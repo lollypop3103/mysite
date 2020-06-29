@@ -7,14 +7,12 @@
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const siteName = 'CheersBeer';
 const siteUrl = 'https://cheersbeer.dev';
-const basePath = '/';
 
 module.exports = {
   siteName,
   siteUrl,
   plugins: [
     { use: 'gridsome-plugin-typescript' },
-    { use: 'gridsome-plugin-pwa' },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
@@ -24,20 +22,18 @@ module.exports = {
     {
       use: 'gridsome-plugin-pwa',
       options: {
+        disableServiceWorker: false,
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+        manifestPath: 'manifest.json',
         title: siteName,
-        startUrl: `${siteUrl}${basePath}`,
+        startUrl: '/',
         display: 'standalone',
         statusBarStyle: 'default',
-        manifestPath: '/manifest.json',
-        disableServiceWorker: false,
-        serviceWorkerPath: '/service-worker.js',
-        cachedFileTypes: 'png,jpg,jpeg,svg,woff,woff2',
-        shortName: siteName,
-        themeColor: '#1a202c',
-        backgroundColor: '#fafafa',
+        themeColor: '#666600',
+        backgroundColor: '#ffffff',
         icon: 'src/assets/img/site-icon.png',
-        msTileImage: '',
-        msTileColor: '#1a202c',
+        shortName: siteName,
       },
     },
     {
