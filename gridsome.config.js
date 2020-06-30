@@ -4,7 +4,6 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const siteName = 'CheersBeer';
 const siteUrl = 'https://cheersbeer.dev';
 
@@ -83,8 +82,5 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       plugins: [],
     },
-  },
-  configureWebpack: {
-    plugins: [new BundleAnalyzerPlugin()],
   },
 };
