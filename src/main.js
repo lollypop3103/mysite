@@ -7,15 +7,77 @@ import VueMeta from 'vue-meta';
 
 import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGem,
+  faDatabase,
+  faCogs,
+  faHome,
+  faUser,
+  faStar,
+  faPalette,
+  faBook,
+  faBeer,
+  faGlassCheers,
+  faCoffee,
+  faChessBoard,
+  faBiking,
+  faBaseballBall,
+  faEnvelope,
+  faBookmark,
+} from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard } from '@fortawesome/free-regular-svg-icons';
+import {
+  faJsSquare,
+  faNode,
+  faVuejs,
+  faPhp,
+  faDocker,
+  faAppStoreIos,
+  faReact,
+  faPython,
+  faJava,
+  faTwitter,
+  faGoogle,
+  faGithubSquare,
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import 'prismjs/themes/prism-okaidia.css';
 
 import './assets/stylus/style.styl';
 
-library.add(fas, far, fab);
+library.add(
+  faGem,
+  faDatabase,
+  faCogs,
+  faHome,
+  faUser,
+  faStar,
+  faPalette,
+  faBook,
+  faBeer,
+  faGlassCheers,
+  faCoffee,
+  faChessBoard,
+  faBiking,
+  faBaseballBall,
+  faEnvelope,
+  faBookmark,
+);
+library.add(faAddressCard);
+library.add(
+  faJsSquare,
+  faNode,
+  faVuejs,
+  faPhp,
+  faDocker,
+  faAppStoreIos,
+  faReact,
+  faPython,
+  faJava,
+  faTwitter,
+  faGoogle,
+  faGithubSquare,
+);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;

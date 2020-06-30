@@ -10,6 +10,9 @@ const siteUrl = 'https://cheersbeer.dev';
 module.exports = {
   siteName,
   siteUrl,
+  icon: {
+    favicon: './src/favicon.png',
+  },
   plugins: [
     { use: 'gridsome-plugin-typescript' },
     {
