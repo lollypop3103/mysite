@@ -40,21 +40,21 @@ export default Vue.extend({
 
 .privacy-policy {
   grid-area: privacy-policy;
+
+  a {
+    color: #007ca5;
+  }
 }
 
 .contact {
   grid-area: contact;
 
   a {
-    color: #008cba;
+    color: #007ca5;
   }
 }
 
 .copyright {
   grid-area: copyright;
-
-  a {
-    color: #008cba;
-  }
 }
 </style>
