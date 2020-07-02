@@ -17,7 +17,7 @@
 <script lang="ts">
 import Vue from 'vue';
 
-const copyRight = `\u00a9 ${new Date().getFullYear()}. All Rights Reserved.`;
+const copyRight = `\u00a9 CheersBeer ${new Date().getFullYear()}. All Rights Reserved.`;
 
 export default Vue.extend({
   name: 'App',
