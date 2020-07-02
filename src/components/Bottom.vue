@@ -44,15 +44,17 @@ export default Vue.extend({
 
 .contact {
   grid-area: contact;
+
+  a {
+    color: #008cba;
+  }
 }
 
 .copyright {
   grid-area: copyright;
-}
 
-a {
-  color: #008cba;
-  cursor: pointer;
-  text-decoration: none;
+  a {
+    color: #008cba;
+  }
 }
 </style>
