@@ -22,22 +22,20 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style lang="stylus">
 .footer {
   text-anchor: middle;
   vertical-align: middle;
   margin-top: auto;
   bottom: 0;
   padding: 3rem 1.5rem 3rem;
-}
 
-.footer-container {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  grid-template-areas:
-    'privacy-policy contact'
-    'copyright      copyright';
+  &-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'privacy-policy contact' \  'copyright copyright';
+  }
 }
 
 .privacy-policy {
@@ -50,5 +48,11 @@ export default Vue.extend({
 
 .copyright {
   grid-area: copyright;
+}
+
+a {
+  color: #008cba;
+  cursor: pointer;
+  text-decoration: none;
 }
 </style>
