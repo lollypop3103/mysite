@@ -4,7 +4,6 @@
 import DefaultLayout from '~/layouts/Default.vue';
 import VueCompositionApi from '@vue/composition-api';
 import VueMeta from 'vue-meta';
-
 import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {

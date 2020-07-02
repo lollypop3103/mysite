@@ -6,10 +6,14 @@
 
 const siteName = 'CheersBeer';
 const siteUrl = 'https://cheersbeer.dev';
+const siteDescription = `CheersBeer's site'`;
+const titleTemplate = `%s | CheersBeer`;
 
 module.exports = {
   siteName,
   siteUrl,
+  siteDescription,
+  titleTemplate,
   icon: {
     favicon: './src/favicon.png',
   },

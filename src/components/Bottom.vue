@@ -8,7 +8,7 @@
         <router-link to="/contact">お問い合わせ</router-link>
       </div>
       <div class="content has-text-centered copyright">
-        <p>Copyright (C) 2019 CheersBeer. All Rights Reserved.</p>
+        <p>{{ copyRight }}</p>
       </div>
     </div>
   </footer>
@@ -17,8 +17,15 @@
 <script lang="ts">
 import Vue from 'vue';
 
+const copyRight = `\u00a9 ${new Date().getFullYear()}. All Rights Reserved.`;
+
 export default Vue.extend({
   name: 'App',
+  data() {
+    return {
+      copyRight,
+    };
+  },
 });
 </script>
 
