@@ -60,7 +60,7 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000,
-        exclude: ['/exclude-me'],
+        exclude: [],
         config: {
           '/blog/*': {
             changefreq: 'weekly',
@@ -70,7 +70,7 @@ module.exports = {
             changefreq: 'monthly',
             priority: 0.7,
           },
-          '/term': {
+          '/': {
             changefreq: 'monthly',
             priority: 0.7,
           },
