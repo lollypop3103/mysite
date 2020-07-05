@@ -20,7 +20,7 @@ import Vue from 'vue';
 const copyRight = `\u00a9 CheersBeer ${new Date().getFullYear()}. All Rights Reserved.`;
 
 export default Vue.extend({
-  name: 'App',
+  name: 'Bottom',
   data() {
     return {
       copyRight,

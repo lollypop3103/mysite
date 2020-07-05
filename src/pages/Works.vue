@@ -1,12 +1,11 @@
 <template>
-  <div class="contact">
+  <div class="works">
     <portfolio />
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue';
 import Portfolio from '@/components/Portfolio.vue';
-
 export default Vue.extend({
   components: {
     Portfolio,

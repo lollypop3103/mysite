@@ -3,10 +3,9 @@
     <contact />
   </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue';
 import Contact from '@/components/Contact.vue';
-
 export default Vue.extend({
   components: {
     Contact,

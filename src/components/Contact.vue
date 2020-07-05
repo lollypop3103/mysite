@@ -85,8 +85,9 @@
 </template>
 
 <script>
-export default {
-  name: 'App',
+import Vue from 'vue';
+export default Vue.extend({
+  name: 'Contact',
   data: function () {
     return {
       formdata: {},
@@ -105,7 +106,7 @@ export default {
     iframe.setAttribute('style', 'display: none');
     document.body.appendChild(iframe);
   },
-};
+});
 </script>
 
 <style lang="stylus" scoped>

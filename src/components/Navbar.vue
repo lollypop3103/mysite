@@ -107,7 +107,7 @@ import Vue from 'vue';
 import twemoji from 'twemoji';
 
 export default Vue.extend({
-  name: 'App',
+  name: 'Navbar',
   directives: {
     twemoji: {
       inserted(el) {
