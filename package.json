@@ -46,6 +46,7 @@
     "global": "^4.4.0",
     "gridsome": "^0.7.17",
     "gridsome-plugin-pwa": "^0.0.18",
+    "gridsome-plugin-robots-txt": "^1.0.2",
     "lodash": "^4.17.15",
     "netlify-cli": "^2.54.0",
     "npm-check-updates": "^7.0.1",
