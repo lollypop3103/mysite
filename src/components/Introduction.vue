@@ -65,10 +65,12 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
   name: 'Introduction',
-};
+});
 </script>
 <style lang="stylus" scoped>
 @import '../../node_modules/bulma.styl/bulma.styl';

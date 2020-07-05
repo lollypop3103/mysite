@@ -85,27 +85,28 @@
 </template>
 
 <script>
-export default {
-  name: 'App',
-  data: function() {
+import Vue from 'vue';
+export default Vue.extend({
+  name: 'Contact',
+  data: function () {
     return {
       formdata: {},
       submitted: false,
     };
   },
   methods: {
-    gf_submit: function() {
+    gf_submit: function () {
       document.gf_form.submit();
       this.submitted = true;
     },
   },
-  mounted: function() {
+  mounted: function () {
     var iframe = document.createElement('iframe');
     iframe.setAttribute('name', 'hidden_iframe');
     iframe.setAttribute('style', 'display: none');
     document.body.appendChild(iframe);
   },
-};
+});
 </script>
 
 <style lang="stylus" scoped>

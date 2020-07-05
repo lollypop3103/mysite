@@ -5,13 +5,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import Vue from 'vue';
 import Hello from '@/components/Hello.vue';
 
-@Component({
+export default Vue.extend({
   components: {
     Hello,
   },
-})
-export default class Home extends Vue {}
+  metaInfo() {
+    return {
+      title: 'Home',
+      meta: [{ name: 'author', content: 'Cheers Beer' }],
+    };
+  },
+});
 </script>
