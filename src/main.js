@@ -82,14 +82,36 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 export default function (Vue, { head }) {
+  const siteName = 'CheersBeer';
+  const siteDescription = `CheersBeer's site`;
+  const copyRight = `\u00a9 CheersBeer ${new Date().getFullYear()}. All Rights Reserved.`;
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Roboto',
+  });
+  head.meta.push(
+    {
+      name: 'author',
+      content: 'CheersBeer',
+    },
+    {
+      key: 'description',
+      name: 'description',
+      content: siteDescription,
+    },
+
+    { name: 'copyright', content: copyRight },
+    { property: `og:locale`, content: `ja_JP` },
+    { key: `og:type`, property: `og:type`, content: `website` },
+    { key: 'og:description', property: 'og:description', content: siteDescription },
+    { property: 'og:site_name', content: siteName },
+  );
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
   Vue.use(VueCompositionApi);
   Vue.use(VueMeta, {
     keyName: 'head',
-  });
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto',
   });
 }
