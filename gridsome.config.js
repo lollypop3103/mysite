@@ -78,9 +78,6 @@ module.exports = {
       },
     },
     {
-      use: 'gridsome-plugin-htaccess',
-    },
-    {
       use: 'gridsome-plugin-robots-txt',
       options: {
         host: siteUrl,
