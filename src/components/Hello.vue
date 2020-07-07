@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content is-medium">
-          <h1 class="title">CheersBeer's web site.</h1>
+          <h1 class="title">CheersBeer's web site</h1>
           <p>
             都内のWEB系企業でエンジニアとして働いています。
             <br />楽をするための努力が好きです。
