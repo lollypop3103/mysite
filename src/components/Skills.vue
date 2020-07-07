@@ -62,8 +62,6 @@ export default Vue.extend({
 </script>
 
 <style lang="stylus" scoped>
-@import '../../node_modules/bulma.styl/bulma.styl';
-
 .font-awesome-icon {
   margin-right: 8px;
 }

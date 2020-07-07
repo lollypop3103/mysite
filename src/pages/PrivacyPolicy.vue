@@ -14,7 +14,7 @@ export default Vue.extend({
   },
   metaInfo() {
     return {
-      title: 'About',
+      title: 'Privacy Policy',
       meta: [{ name: 'author', content: 'Cheers Beer' }],
     };
   },
