@@ -40,8 +40,6 @@ import {
   faGithubSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import 'prismjs/themes/prism-okaidia.css';
-
 import './assets/stylus/style.styl';
 
 library.add(
