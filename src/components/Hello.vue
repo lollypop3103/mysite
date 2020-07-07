@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content is-medium">
-          <p>CheersBeer's web site.</p>
+          <h1 class="title">CheersBeer's web site.</h1>
           <p>
             都内のWEB系企業でエンジニアとして働いています。
             <br />楽をするための努力が好きです。
@@ -41,9 +41,7 @@ export default Vue.extend({
   name: 'Hello',
 });
 </script>
-<style scoped>
-@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
-</style>
+
 <style lang="stylus" scoped>
 .font-awesome-icon {
   margin-right: 8px;

@@ -130,9 +130,6 @@ export default Vue.extend({
 </script>
 
 <style lang="stylus">
-@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-
 @media screen and (min-width: 1024px) {
   .container {
     width: initial;

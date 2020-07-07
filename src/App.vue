@@ -32,3 +32,7 @@ export default Vue.extend({
   flex: 1;
 }
 </style>
+
+<style>
+@import '../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
+</style>
