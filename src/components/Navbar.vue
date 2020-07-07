@@ -129,10 +129,6 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-@import './../../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
-</style>
-
 <style lang="stylus">
 @media screen and (min-width: 1024px) {
   .container {
