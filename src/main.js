@@ -40,7 +40,7 @@ import {
   faGithubSquare,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import './assets/stylus/style.styl';
+import '~/assets/stylus/style.styl';
 
 library.add(
   faGem,
