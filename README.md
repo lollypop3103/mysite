@@ -1,4 +1,6 @@
-# vue-blog
+# cheersbeer's site
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6bab94d-3483-4da9-8969-f3e16b10f1cd/deploy-status)](https://app.netlify.com/sites/cheersbeer/deploys)
 
 ## Project setup
 ```
@@ -7,17 +9,12 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn develop
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+yarn build
 ```
 
 ### Lints and fixes files
@@ -25,15 +22,9 @@ yarn run test
 yarn run lint
 ```
 
-### Run your end-to-end tests
-```
-yarn run test:e2e
-```
+## licenses
 
-### Run your unit tests
-```
-yarn run test:unit
-```
+This site logo uses [font-awesome](https://fontawesome.com/icons/bicycle?style=solid).
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [Free License | Font Awesome](https://fontawesome.com/license/free)
+- [Creative Commons — Attribution 4.0 International — CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
