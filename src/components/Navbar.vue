@@ -4,18 +4,7 @@
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
-            <div class="navbar-brand">
-              <span
-                class="navbar-burger burger"
-                data-target="navbarMenuHeroA"
-                @click="toggleMenu"
-                :class="{ 'is-active': isMenuActive }"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
+            <div class="navbar-brand"></div>
             <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': isMenuActive }" v-show="isMenuActive">
               <div class="navbar-end">
                 <div class="tabs is-one-quarter-desktop is-right Coves-light">
