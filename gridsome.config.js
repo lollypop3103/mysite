@@ -43,20 +43,6 @@ module.exports = {
       },
     },
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        // 投稿ファイルは、blogディレクトリ配下に配置
-        path: 'blog/*.md',
-        // 投稿ページのUIテンプレートは、BlogPost.vueとします
-        typeName: 'BlogPost',
-        // URLパスは、/blog/:slagとしてアクセス可能
-        route: '/blog/:slug',
-        remark: {
-          plugins: ['@gridsome/remark-prismjs'],
-        },
-      },
-    },
-    {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000,
