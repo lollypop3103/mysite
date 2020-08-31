@@ -59,7 +59,7 @@
     "@commitlint/config-conventional": "^9.1.1",
     "@types/jest": "^26.0.10",
     "@types/twemoji": "^12.1.1",
-    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.9.0",
     "@vue/babel-preset-app": "^4.5.4",
     "@vue/cli-plugin-babel": "^4.4.6",
