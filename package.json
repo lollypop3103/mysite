@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
-    "@commitlint/cli": "^9.1.1",
+    "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.1",
     "@types/jest": "^26.0.10",
     "@types/twemoji": "^12.1.1",
