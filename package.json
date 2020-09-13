@@ -92,7 +92,7 @@
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
     "ts-jest": "^26.3.0",
-    "ts-loader": "^8.0.1",
+    "ts-loader": "^8.0.3",
     "typescript": "^3.9.7",
     "vue-template-compiler": "^2.6.11",
     "webpack-bundle-analyzer": "^3.8.0"
