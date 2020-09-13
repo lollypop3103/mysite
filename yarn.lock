@@ -8419,9 +8419,9 @@ graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
 graphql-compose@^7.3.0:
-  version "7.19.3"
-  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-7.19.3.tgz#1c3f0eeba117346744274326d654b976c7ffb25d"
-  integrity sha512-BRrXHFgMmFFBbsqI/I4z4a8b4hFLbeZTGXmC297pr+A1IfFWyrMuHmt4ZyIxtxSGubh5H09AnaVMr4ZbPqvl8Q==
+  version "7.21.1"
+  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-7.21.1.tgz#e24da849c095485d1cec06c1f7517de8b81308b4"
+  integrity sha512-9Cpfdbl9EXla5SR0SmfHB7Q2cEzK9YHZzUPcyktzOO+40wfXsHfoFwCT7CtRU+TiENeHK07hG4zPyqRxD18t8w==
   dependencies:
     graphql-type-json "0.3.2"
     object-path "^0.11.4"
