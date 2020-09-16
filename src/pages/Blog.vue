@@ -4,11 +4,8 @@
       <div class="container">
         <div class="content is-medium">
           <div class="outer-container">
-            <h1>Under Construction...</h1>
-            <div class="back">
-              <router-link to="./">
-                <font-awesome-icon class="font-awesome-icon" icon="home" />ホームに戻る
-              </router-link>
+            <div class="posts">
+              <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
             </div>
           </div>
         </div>
@@ -17,14 +14,48 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'UnderConstruction',
-};
+<page-query>
+query {
+  posts: allPost(filter: { published: { eq: true } }) {
+    edges {
+      node {
+        id
+        title
+        date(format: "D. MMMM YYYY")
+        timeToRead
+        description
+        cover_image(width: 770, height: 380, blur: 10)
+        path
+        tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
+}
+</page-query>
+
+<script lang="ts">
+import Vue from 'vue';
+import PostCard from '@/components/PostCard.vue';
+
+export default Vue.extend({
+  name: 'Blog',
+  components: {
+    PostCard,
+  },
+  metaInfo() {
+    return {
+      title: 'Blog',
+      meta: [{ name: 'author', content: 'Cheers Beer' }],
+    };
+  },
+});
 </script>
 
 <style lang="stylus" scoped>
-
 .font-awesome-icon {
   margin-right: 8px;
 }
