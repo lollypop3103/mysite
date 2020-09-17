@@ -10,19 +10,25 @@
         {{ post.title }}
       </g-link>
       <p class="content" v-html="post.description" />
-      <!-- <PostMeta :post="post" /> -->
+      <PostMeta :post="post" />
     </div>
     <div v-if="post.tags" class="card-footer">
-      <!-- <PostTags class="card-footer-item" :post="post" /> -->
+      <PostTags class="card-footer-item" :post="post" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import PostMeta from '@/components/PostMeta.vue';
+import PostTags from '@/components/PostTags.vue';
+
 export default Vue.extend({
   name: 'PostCard',
-  components: {},
+  components: {
+    PostMeta,
+    PostTags,
+  },
   props: {
     post: {
       type: Object,

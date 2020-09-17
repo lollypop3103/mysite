@@ -17,6 +17,10 @@ module.exports = {
   icon: {
     favicon: './src/favicon.png',
   },
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id',
+  },
   plugins: [
     { use: 'gridsome-plugin-typescript' },
     {
@@ -90,6 +94,12 @@ module.exports = {
         path: 'content/posts/*.md',
         typeName: 'Post',
         route: '/blog/:slug',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+        },
       },
     },
   ],
@@ -99,7 +109,7 @@ module.exports = {
       externalLinksTarget: '_blank',
       // SEO対策として外部リンクは rel="nofollow noopener noreferrer"になるように設定
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      plugins: [],
+      plugins: ['@gridsome/remark-prismjs'],
     },
   },
 };
