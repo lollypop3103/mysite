@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <section class="section">
-      <div class="container">
-        <div class="content is-medium">
-          <div class="outer-container">
-            <div class="posts">
-              <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+  <Layout>
+    <div>
+      <section class="section">
+        <div class="container">
+          <div class="content is-medium">
+            <div class="outer-container">
+              <div class="posts">
+                <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
+  </Layout>
 </template>
 
 <page-query>

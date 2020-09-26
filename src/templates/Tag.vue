@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <h1 class="title is-size-1 has-text-centered"># {{ $page.tag.title }}</h1>
-
     <div class="posts">
       <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
     </div>
