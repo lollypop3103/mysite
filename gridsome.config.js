@@ -4,10 +4,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const siteName = 'CheersBeer';
+const siteName = 'Fumi';
 const siteUrl = 'https://cheersbeer.dev';
-const siteDescription = `CheersBeer's site`;
-const titleTemplate = `%s | CheersBeer`;
+const siteDescription = `Fumi's site`;
+const titleTemplate = `%s | Fumi's site`;
 
 module.exports = {
   siteName,
@@ -16,6 +16,10 @@ module.exports = {
   titleTemplate,
   icon: {
     favicon: './src/favicon.png',
+  },
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id',
   },
   plugins: [
     { use: 'gridsome-plugin-typescript' },
@@ -84,6 +88,21 @@ module.exports = {
         ],
       },
     },
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: 'content/posts/*.md',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+        },
+      },
+    },
   ],
   transformers: {
     remark: {
@@ -91,7 +110,7 @@ module.exports = {
       externalLinksTarget: '_blank',
       // SEO対策として外部リンクは rel="nofollow noopener noreferrer"になるように設定
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      plugins: [],
+      plugins: ['@gridsome/remark-prismjs'],
     },
   },
 };

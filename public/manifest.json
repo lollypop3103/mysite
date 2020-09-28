@@ -3,17 +3,17 @@
   "short_name": "CheersBeer",
   "icons": [
     {
-      "src": "./img/icons/android-chrome-192x192.jpeg",
+      "src": "img/icons/android-chrome-192x192.jpeg",
       "sizes": "192x192",
       "type": "image/jpeg"
     },
     {
-      "src": "./img/icons/android-chrome-512x512.jpeg",
+      "src": "img/icons/android-chrome-512x512.jpeg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#4DBA87"
