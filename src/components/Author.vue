@@ -6,7 +6,7 @@
       {{ $static.metadata.siteName }}
     </h1>
 
-    <p>A baseline Gridsome starter to get you going with Bulma.</p>
+    <p>都内IT企業勤めのエンジニア。 Node.js、Vue、機械学習が好き。 Flutterが気になっている。</p>
   </div>
 </template>
 
