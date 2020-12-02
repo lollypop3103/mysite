@@ -1,35 +1,54 @@
 <template>
-  <div>
-    <section class="section">
-      <div class="container">
-        <div class="content is-medium">
-          <div class="outer-container">
-            <h1>Under Construction...</h1>
-            <div class="back">
-              <router-link to="./">
-                <font-awesome-icon class="font-awesome-icon" icon="home" />ホームに戻る
-              </router-link>
-            </div>
-          </div>
+  <Layout>
+    <div class="columns">
+      <div class="column is-7">
+        <!-- List posts -->
+        <div class="posts">
+          <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
         </div>
       </div>
-    </section>
-  </div>
+      <div class="column is-3">
+        <!-- Author intro -->
+        <Author :show-title="true" />
+      </div>
+    </div>
+  </Layout>
 </template>
 
+<page-query>
+query {
+  posts: allPost(filter: { published: { eq: true } }) {
+    edges {
+      node {
+        id
+        title
+        date(format: "D. MMMM YYYY")
+        timeToRead
+        description
+        cover_image(width: 770, height: 380, blur: 10)
+        path
+        tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
+import Author from '~/components/Author.vue';
+import PostCard from '~/components/PostCard.vue';
+
 export default {
-  name: 'UnderConstruction',
+  components: {
+    Author,
+    PostCard,
+  },
+  metaInfo: {
+    title: 'Blog',
+  },
 };
 </script>
-
-<style lang="stylus" scoped>
-
-.font-awesome-icon {
-  margin-right: 8px;
-}
-
-a {
-  color: #4a4a4a;
-}
-</style>

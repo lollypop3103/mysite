@@ -20,6 +20,11 @@
                       </router-link>
                     </li>
                     <li @click="closeMenu">
+                      <router-link to="/blog">
+                        <font-awesome-icon class="font-awesome-icon" icon="book" />Blog
+                      </router-link>
+                    </li>
+                    <li @click="closeMenu">
                       <router-link to="/skills">
                         <font-awesome-icon class="font-awesome-icon" icon="star" /> Skills
                       </router-link>
@@ -27,16 +32,6 @@
                     <li @click="closeMenu">
                       <router-link to="/works">
                         <font-awesome-icon class="font-awesome-icon" icon="palette" />Works
-                      </router-link>
-                    </li>
-                    <li @click="closeMenu">
-                      <router-link to="/blog">
-                        <font-awesome-icon class="font-awesome-icon" icon="book" />Blog
-                      </router-link>
-                    </li>
-                    <li @click="closeMenu">
-                      <router-link to="/contact">
-                        <font-awesome-icon class="font-awesome-icon" :icon="['far', 'address-card']" />Contact
                       </router-link>
                     </li>
                   </ul>
@@ -48,10 +43,9 @@
       </div>
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title Coves-bold"><font-awesome-icon class="font-awesome-icon" icon="beer" />CheersBeer</h1>
+          <h1 class="title Coves-bold"><font-awesome-icon class="font-awesome-icon" icon="beer" />Fumi's web site</h1>
         </div>
       </div>
-
       <!-- Hero footer: will stick at the bottom -->
       <div class="hero-foot">
         <nav class="tabs">
@@ -66,6 +60,9 @@
                 </router-link>
               </li>
               <li @click="closeMenu">
+                <router-link to="/blog"> <font-awesome-icon class="font-awesome-icon" icon="book" />Blog </router-link>
+              </li>
+              <li @click="closeMenu">
                 <router-link to="/skills">
                   <font-awesome-icon class="font-awesome-icon" icon="star" /> Skills
                 </router-link>
@@ -73,14 +70,6 @@
               <li @click="closeMenu">
                 <router-link to="/works">
                   <font-awesome-icon class="font-awesome-icon" icon="palette" />Works
-                </router-link>
-              </li>
-              <li @click="closeMenu">
-                <router-link to="/blog"> <font-awesome-icon class="font-awesome-icon" icon="book" />Blog </router-link>
-              </li>
-              <li @click="closeMenu">
-                <router-link to="/contact">
-                  <font-awesome-icon class="font-awesome-icon" :icon="['far', 'address-card']" />Contact
                 </router-link>
               </li>
             </ul>
