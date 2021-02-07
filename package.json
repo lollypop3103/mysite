@@ -95,7 +95,7 @@
     "ts-loader": "^8.0.10",
     "typescript": "^4.1.3",
     "vue-template-compiler": "^2.6.12",
-    "webpack-bundle-analyzer": "^4.3.0"
+    "webpack-bundle-analyzer": "^4.4.0"
   },
   "resolutions": {
     "@commitlint/cli/**/yargs-parser": "^18.1.3",
