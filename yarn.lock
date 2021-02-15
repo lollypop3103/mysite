@@ -8647,12 +8647,12 @@ graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
 
 graphql-compose@^7.3.0:
-  version "7.23.0"
-  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-7.23.0.tgz#df377fed9758cb42ffe310c4437ec443b4c2dc7f"
-  integrity sha512-OZxrc3FQoFumf2cG1IiBraIAPbiYjdLZFyNADAZ26n7betm9t7wu4LcgGJ7DhvsGQ7NAtBc5QgM2CQ2uhP0KLg==
+  version "7.25.0"
+  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-7.25.0.tgz#cd893172616ce56b0566e62fd249fb7782332d38"
+  integrity sha512-Zd2G62Sq0ZQW+qXds/LgSi3YSulmk2t2YS3WJfHvNslkEbyAcE1mFiy7c1wU0tl3woB0vPRwI0jAYtSSG6llNA==
   dependencies:
     graphql-type-json "0.3.2"
-    object-path "^0.11.4"
+    object-path "0.11.5"
 
 graphql-playground-html@^1.6.29:
   version "1.6.29"
@@ -13237,7 +13237,7 @@ object-keys@~0.4.0:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-0.4.0.tgz#28a6aae7428dd2c3a92f3d95f21335dd204e0336"
   integrity sha1-KKaq50KN0sOpLz2V8hM13SBOAzY=
 
-object-path@^0.11.4:
+object-path@0.11.5:
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.5.tgz#d4e3cf19601a5140a55a16ad712019a9c50b577a"
   integrity sha512-jgSbThcoR/s+XumvGMTMf81QVBmah+/Q7K7YduKeKVWL7N111unR2d6pZZarSk6kY/caeNxUDyxOvMWyzoU2eg==
