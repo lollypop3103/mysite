@@ -2,10 +2,12 @@ version: 2
 updates:
   - package-ecosystem: npm
     directory: '/'
-    update_schedule: 'weekly'
-    default_reviewers:
+    schedule:
+      interval: weekly
+      time: '21:00'
+    reviewers:
       - 'cheersbeer'
-    default_labels:
+    labels:
       - 'dependencies'
     allowed_updates:
       - match:
