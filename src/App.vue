@@ -20,9 +20,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
-@import '../node_modules/bulma/bulma.sass';
-
+<style lang="stylus">
 .sf-site-all {
   min-height: 100vh;
   display: flex;
@@ -34,5 +32,6 @@ export default Vue.extend({
 </style>
 
 <style>
+@import '../node_modules/bulma/css/bulma.min.css';
 @import '../node_modules/bulmaswatch/yeti/bulmaswatch.min.css';
 </style>
