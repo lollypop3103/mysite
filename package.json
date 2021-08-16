@@ -92,7 +92,7 @@
     "prettier": "^2.3.2",
     "stylus": "^0.54.8",
     "stylus-loader": "3",
-    "ts-jest": "^27.0.3",
+    "ts-jest": "^27.0.4",
     "ts-loader": "8.3.0",
     "typescript": "^4.3.5",
     "vue-template-compiler": "^2.6.14",
