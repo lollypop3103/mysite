@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.9.0"
+    "node": "12.x"
   },
   "scripts": {
     "build": "gridsome build",
@@ -76,7 +75,7 @@
     "@vue/test-utils": "1.2.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "core-js": "^3.16.1",
+    "core-js": "^3.23.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-gridsome": "^1.6.2",
