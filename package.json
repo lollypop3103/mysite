@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.9.0"
+    "node": "12.x"
   },
   "scripts": {
     "build": "gridsome build",
@@ -36,7 +35,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@gridsome/plugin-google-analytics": "^0.1.2",
