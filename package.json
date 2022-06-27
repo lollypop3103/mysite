@@ -40,7 +40,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@gridsome/plugin-google-analytics": "^0.1.2",
     "@gridsome/plugin-sitemap": "^0.4.0",
-    "bulma": "^0.9.3",
+    "bulma": "^0.9.4",
     "bulma.styl": "^0.6.11",
     "bulmaswatch": "^0.8.1",
     "gridsome": "^0.7.23",
