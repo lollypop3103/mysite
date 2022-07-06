@@ -64,7 +64,7 @@
     "@typescript-eslint/parser": "^4.29.1",
     "@vue/babel-preset-app": "^4.5.13",
     "@vue/cli-plugin-babel": "^5.0.6",
-    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/cli-plugin-eslint": "^5.0.7",
     "@vue/cli-plugin-pwa": "^5.0.6",
     "@vue/cli-plugin-typescript": "^4.5.13",
     "@vue/cli-plugin-unit-jest": "^4.5.13",
