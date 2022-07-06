@@ -3736,12 +3736,10 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.1.1.tgz#e0ed16d8449ad717329167b9f4b0d2005515df4b"
-  integrity sha512-LduQZICuBuwij541PgLsuxY/W/TA51xkSy2mBrRgnwQuqvb9YHdFguc0TwWTCAFq/EiwHWqsCb/SDYMkf01tCA==
-  dependencies:
-    tslib "^2.3.0"
+"@vue/composition-api@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.7.0.tgz#26fae79e5023fc6c9dfd99ca5d3d357e1c5b9c60"
+  integrity sha512-hxOgLYR+wjuPX9bkP2pAPlqUs98XxBoa9DSLyp1z6+YR92wC42PZcZKs4d+VRtcv4udOv041Kss+F6ap5nj8YA==
 
 "@vue/eslint-config-prettier@^6.0.0":
   version "6.0.0"
@@ -18947,11 +18945,6 @@ tslib@^2.0.3:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
-
-tslib@^2.3.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tslint@^5.20.1:
   version "5.20.1"
