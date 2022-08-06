@@ -3,22 +3,26 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6bab94d-3483-4da9-8969-f3e16b10f1cd/deploy-status)](https://app.netlify.com/sites/cheersbeer/deploys)
 
 ## Project setup
-```
+
+```bash
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
-```
-yarn develop
+
+```bash
+yarn dev
 ```
 
 ### Compiles and minifies for production
-```
+
+```bash
 yarn build
 ```
 
 ### Lints and fixes files
-```
+
+```bash
 yarn run lint
 ```
 
