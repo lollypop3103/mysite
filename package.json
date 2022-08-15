@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^0.3.0",
-    "@astrojs/tailwind": "^0.2.5",
+    "@astrojs/tailwind": "^1.0.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
