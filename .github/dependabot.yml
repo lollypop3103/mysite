@@ -12,8 +12,3 @@ updates:
   labels:
   - dependencies
   versioning-strategy: increase
-  ignore:
-  - dependency-name: source-map-url
-    versions:
-    - 0.4.1
-  - dependency-name: husky
