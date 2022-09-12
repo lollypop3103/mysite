@@ -3830,10 +3830,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha512-NJGVKPS81XejHcLhaLJS7plab0fK3slPh11mESeeDq2W4ZI5kUKK/LRRdVDvjJseojbPB7ZwjnyOybg3Igea/A==
 
-daisyui@^2.24.2:
-  version "2.24.2"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.24.2.tgz#1c59c26453fcdb73b0f3664e834e903e5852484c"
-  integrity sha512-m1Z1FkkZ6Rdc81ehOjqMX6zKrUd1YReBKuowQNTNR1H3l//rbH3Gdrsx8L9w2wsxB0x+2NJCP1kGA3bbeacghQ==
+daisyui@^2.27.0:
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.27.0.tgz#145e75e17529f81a113c84e86cc5312e01799f88"
+  integrity sha512-AhFGhTore1Kdnae+5RGc2PGESSXOjAQDHJfvryP+KY41gxMcNErtuaGZG+nOmvOzNKgxViSDSaOn/VZq6H8kxA==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
