@@ -2191,12 +2191,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/semver@^7.0.0":
-  version "7.3.10"
-  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.10.tgz#5f19ee40cbeff87d916eedc8c2bfe2305d957f73"
-  integrity sha512-zsv3fsC7S84NN6nPK06u79oWgrPVd0NvOyqgghV1haPaFcVxIrP4DLomRwGAXk0ui4HZA7mOcSFL98sMVW9viw==
-
-"@types/semver@^7.3.12":
+"@types/semver@^7.0.0", "@types/semver@^7.3.12":
   version "7.3.13"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
   integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
@@ -3816,6 +3811,11 @@ comma-separated-tokens@^2.0.0:
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-2.0.2.tgz#d4c25abb679b7751c880be623c1179780fe1dd98"
   integrity sha512-G5yTt3KQN4Yn7Yk4ed73hlZ1evrFKXeUW3086p3PRFNp7m2vIjI6Pg+Kgb+oyzhd9F2qdcoj67+y3SdxL5XWsg==
 
+commander@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-10.0.0.tgz#71797971162cd3cf65f0b9d24eb28f8d303acdf1"
+  integrity sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==
+
 commander@^2.11.0, commander@^2.8.1:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -3826,7 +3826,7 @@ commander@^7.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
-commander@^9.0.0, commander@^9.1.0, commander@^9.2.0, commander@^9.3.0, commander@^9.4.0, commander@^9.4.1:
+commander@^9.0.0, commander@^9.1.0, commander@^9.2.0, commander@^9.3.0, commander@^9.4.1:
   version "9.4.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.4.1.tgz#d1dd8f2ce6faf93147295c0df13c7c21141cfbdd"
   integrity sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==
@@ -13586,10 +13586,10 @@ yargs@^17.0.0, yargs@^17.3.1, yargs@^17.6.0:
     y18n "^5.0.5"
     yargs-parser "^21.0.0"
 
-yarn-audit-fix@^9.3.7:
-  version "9.3.7"
-  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-9.3.7.tgz#bd8c66ce2edecd930d99d55e9c6470aabdd35811"
-  integrity sha512-zYSp7fp3oJhGGt7o4/DvwQJTfV8M0ozOUPVpHmCAeQkJhNDj/3Zq8vLYToyffvzy2A86zZKEMPTQsLrNvYvqqA==
+yarn-audit-fix@^9.3.8:
+  version "9.3.8"
+  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-9.3.8.tgz#2f83deb3519a4d390bc913ce6b1cd58c0a6558d8"
+  integrity sha512-ftjmghVUrBUYDqgi4dw079duxRwu8PwwwvnsCUwPJgARrmT+f+OkHQiaDqY9PsGxDcYSRv16okZtdOH7p/WgXA==
   dependencies:
     "@types/find-cache-dir" "^3.2.1"
     "@types/fs-extra" "^9.0.13"
@@ -13598,7 +13598,7 @@ yarn-audit-fix@^9.3.7:
     "@types/yarnpkg__lockfile" "^1.1.5"
     "@yarnpkg/lockfile" "^1.1.0"
     chalk "^5.0.1"
-    commander "^9.4.0"
+    commander "^10.0.0"
     find-cache-dir "^4.0.0"
     find-up "^6.3.0"
     fs-extra "^10.1.0"
