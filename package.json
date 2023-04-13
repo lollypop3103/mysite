@@ -73,7 +73,7 @@
     "ts-jest": "^29.0.5",
     "ts-loader": "9.4.2",
     "typescript": "^5.0.2",
-    "yarn-audit-fix": "^9.3.9"
+    "yarn-audit-fix": "^9.3.10"
   },
   "engines": {
     "node": ">=18.x"
