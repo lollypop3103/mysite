@@ -4547,13 +4547,14 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha512-NJGVKPS81XejHcLhaLJS7plab0fK3slPh11mESeeDq2W4ZI5kUKK/LRRdVDvjJseojbPB7ZwjnyOybg3Igea/A==
 
-daisyui@^3.1.7:
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.1.7.tgz#030eea446566dfd8b18b7f7734c9f5cecf36f501"
-  integrity sha512-VQhaunQlB7Buo+AbE+S3i6H/eYknKEuKVHG67y7sbG58uEjeLK6n2rojG3YE7fwoOss6ldbUL8Oy0MyoJi0CHw==
+daisyui@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.2.1.tgz#7fac542b03023adbde2afc869518840dbef509ee"
+  integrity sha512-gIqE6wiqoJt9G8+n3R/SwLeUnpNCE2eDhT73rP0yZYVaM7o6zVcakBH3aEW5RGpx3UkonPiLuvcgxRcb2lE8TA==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
+    postcss "^8"
     postcss-js "^4"
     tailwindcss "^3"
 
@@ -10184,7 +10185,7 @@ postcss-values-parser@^6.0.2:
     is-url-superb "^4.0.0"
     quote-unquote "^1.0.0"
 
-postcss@^8.4.23, postcss@^8.4.24, postcss@^8.4.25:
+postcss@^8, postcss@^8.4.23, postcss@^8.4.24, postcss@^8.4.25:
   version "8.4.25"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.25.tgz#4a133f5e379eda7f61e906c3b1aaa9b81292726f"
   integrity sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==
