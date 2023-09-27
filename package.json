@@ -49,7 +49,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/jest": "^29.5.4",
     "@types/twemoji": "^13.1.2",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
