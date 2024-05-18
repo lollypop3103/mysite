@@ -37,7 +37,7 @@
     "@astrojs/tailwind": "^4.0.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
-    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@sarissa/pagination": "^1.0.3",
     "daisyui": "^4.6.1",
