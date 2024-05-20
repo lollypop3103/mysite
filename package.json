@@ -42,7 +42,7 @@
     "@sarissa/pagination": "^1.0.3",
     "daisyui": "^4.11.1",
     "fuse.js": "^6.6.2",
-    "luxon": "^3.4.3",
+    "luxon": "^3.4.4",
     "theme-change": "^2.5.0",
     "twemoji": "^14.0.2"
   },
